@@ -28,7 +28,6 @@ int main(int argc, const char * argv[])
     
     std::cout << sum << "\n";
     
-		// ABC 123
     return 0;
 }
 
