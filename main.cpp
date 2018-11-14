@@ -10,7 +10,6 @@
  */
 int main(int argc, const char * argv[])
 {
-	int a = 2;
     float x = 0;
     int size = 0; 
     float average = 0;
