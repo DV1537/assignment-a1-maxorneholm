@@ -14,7 +14,7 @@ int main(int argc, const char * argv[])
     int size = 0; 
     float average = 0;
     float sum = 0;
-
+ 
     std::ifstream file;
     file.open(argv[1]);
 
