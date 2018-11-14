@@ -27,12 +27,12 @@ int main(int argc, const char * argv[])
         }
     }else{
         std::cout << "The file couldn't be opened." << std::endl;
-        //exit(EXIT_FAILURE);
+        getchar();
+        exit(EXIT_FAILURE);
     }
 
-    file.close();
-    file.open(argv[1]);
-
+    file.clear();
+    file.seekg(0, std::ios::beg);
 
     float *array = new float[size];
 
@@ -44,6 +44,8 @@ int main(int argc, const char * argv[])
 
     std::cout.setf(std::ios::fixed,std::ios::floatfield);
     std::cout.precision(3);
+
+
 
     std::cout << "Input:" << std::endl;
     for(int i = 0; i < size; i++){
