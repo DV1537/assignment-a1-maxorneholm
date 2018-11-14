@@ -1,13 +1,6 @@
 #include <iostream>
 #include <fstream>
 
-/**
- * The program reads numbers from a file and prints the sum of them
- * Example: main.exe ./tests/input.in
- * @param  argc [description]
- * @param  argv [description]
- * @return      [description]
- */
 int main(int argc, const char * argv[])
 {
     float x = 0;
@@ -44,8 +37,6 @@ int main(int argc, const char * argv[])
     std::cout.setf(std::ios::fixed,std::ios::floatfield);
     std::cout.precision(3);
 
-
-
     std::cout << "Input:" << std::endl;
     for(int i = 0; i < size; i++){
         std::cout << array[i] << " ";
@@ -53,7 +44,6 @@ int main(int argc, const char * argv[])
 
     average = (sum/size);
 
-    
     std::cout << '\n' << average << '\n';
 
     std::cout << "\nOutput:" << std::endl;
