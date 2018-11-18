@@ -23,8 +23,9 @@ int main(int argc, const char * argv[])
         exit(EXIT_FAILURE);
     }
 
+    // Returns to the beggining of the input file.
     file.clear();
-    file.seekg(0, std::ios::beg);
+    file.seekg(0, std::ios::beg); 
 
     float *array = new float[size];
 
@@ -43,8 +44,6 @@ int main(int argc, const char * argv[])
     }
 
     average = (sum/size);
-
-    std::cout << '\n' << average << '\n';
 
     std::cout << "\nOutput:" << std::endl;
     for(int i = 0; i < size; i++){
